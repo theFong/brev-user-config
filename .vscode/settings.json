@@ -1,4 +1,31 @@
 {
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    "workbench.colorTheme": "Quiet Light"
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "workbench.colorTheme": "Quiet Light",
+  "workbench.iconTheme": "vscode-icons",
+  "vim.useSystemClipboard": true,
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.camelCaseMotion.enable": true,
+  "vim.leader": "<tab>",
+  "vim.easymotionMarkerBackgroundColor": "rgba(235, 235, 235, 1)",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [" "],
+      "after": ["leader", "leader", "leader", "b", "d", "w"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["g", "n"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["g", "e"],
+      "commands": ["workbench.action.navigateToLastEditLocation"]
+    }
+  ]
 }
