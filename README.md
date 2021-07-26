@@ -1,4 +1,8 @@
 # Brev Setup
-## Features
-- zsh
 
+## Features
+
+- zsh
+- Default theme (Quiet Light) -- yep...
+- prettier
+- gitlens
