@@ -1,0 +1,4 @@
+# Brev Setup
+## Features
+- zsh
+
