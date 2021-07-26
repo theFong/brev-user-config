@@ -1,7 +1,8 @@
 {
   "terminal.integrated.defaultProfile.linux": "zsh",
   "workbench.colorTheme": "Quiet Light",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "material-icon-theme",
+  // "workbench.iconTheme": "vscode-icons",
   "vim.useSystemClipboard": true,
   "vim.easymotion": true,
   "vim.sneak": true,
