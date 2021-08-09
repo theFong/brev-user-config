@@ -11,3 +11,4 @@ code-server --install-extension coolbear.systemd-unit-file
 # code-server --install-extension vscode-icons-team.vscode-icons
 code-server --install-extension pkief.material-icon-theme
 # code-server --install-extension vscodevim.vim
+code-server --install-extension github.vscode-pull-request-github
