@@ -2,7 +2,7 @@
   "terminal.integrated.defaultProfile.linux": "zsh",
   "workbench.colorTheme": "Quiet Light",
   "workbench.iconTheme": "material-icon-theme",
-  // "workbench.iconTheme": "vscode-icons",
+  "editor.smoothScrolling": true,
   "vim.useSystemClipboard": true,
   "vim.easymotion": true,
   "vim.sneak": true,
@@ -27,6 +27,10 @@
     {
       "before": ["g", "e"],
       "commands": ["workbench.action.navigateToLastEditLocation"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
     }
   ]
 }
