@@ -15,3 +15,5 @@ code-server --install-extension github.vscode-pull-request-github
 export SERVICE_URL=https://open-vsx.org/vscode/gallery
 export ITEM_URL=https://open-vsx.org/vscode/item
 code-server --install-extension gitduck.code-streaming
+
+git config --global pull.ff only
