@@ -38,3 +38,5 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plu
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
 sudo usermod -aG docker $USER
+
+sudo apt-get install -y make build-essential zip
