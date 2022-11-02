@@ -1,3 +1,19 @@
+
+# add swap
+sudo swapon --show
+FILE=/swapfile
+if [ -f "$FILE" ]; then
+  echo "$FILE exists."
+else 
+  echo "$FILE does not exist."
+  sudo fallocate -l 4G /swapfile
+  sudo chmod 600 /swapfile
+  sudo mkswap /swapfile
+  sudo swapon /swapfile
+  sudo sh -c 'echo "/swapfile swap swap defaults 0 0" >> /etc/fstab'
+fi
+sudo free -h
+
 ## install and configure oh-my-zsh headless for ubuntu 20.04
 sudo apt update && sudo apt install -y zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended || true
