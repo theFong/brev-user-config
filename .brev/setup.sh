@@ -40,6 +40,8 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo bash -c "echo '{ \"storage-driver\": \"vfs\" }' > /etc/docker/daemon.json" 
+
 # https://docs.docker.com/engine/install/linux-postinstall/
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
