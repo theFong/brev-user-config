@@ -1,3 +1,4 @@
+echo $BREV_MANAGED_ENV_VARS
 
 # add swap
 sudo swapon --show
